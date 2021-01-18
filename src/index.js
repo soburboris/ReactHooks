@@ -5,11 +5,11 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import TopBar from 'components/topBar'
 import Routes from 'pages/routes'
 
-const App = () => {
+const App = (state) => {
   return (
     <div >
       <Router>
-        <TopBar/>
+        <TopBar state={state}/>
         <Routes/>
       </Router>
       
